@@ -1,0 +1,11 @@
+- name: varibless from prompt
+  hosts: local
+  connection: local 
+  vars_prompt:
+    - name: username
+      prompt: please enter the usename?
+      privite: false
+  tasks:
+    -name: display the entered username
+    ansible.builtin.debug:
+      msg: "the entered name is: {{ username }}"
