@@ -15,3 +15,7 @@
         NAME: from task level
       ansible.builtin.debug:
         msg: "NAME: {{ NAME }}"
+
+
+# 1) first preference is for arguments or command line
+# 2) prompt
