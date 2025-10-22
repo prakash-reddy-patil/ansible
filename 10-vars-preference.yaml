@@ -10,8 +10,8 @@
     prompt: What is NAME?
     private: false
   tasks:
-  - name: testing varibles preference
-    vars:
-      NAME: from task level
+    - name: testing varibles preference
+      vars:
+        NAME: from task level
       ansible.builtin.debug:
         msg: "NAME: {{ NAME }}"
