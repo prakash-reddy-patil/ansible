@@ -2,5 +2,7 @@
   hosts: local
   connection: local
   tasks:
-    msg: "the course name is:{{ COURSE }} and duration is:{{ DURATION }} and trainer is : {{ TRAINER }}"
+    - name: print the varibles from inventory
+      ansible.builtin.debug:
+        msg: "the course name is:{{ COURSE }} and duration is:{{ DURATION }} and trainer is : {{ TRAINER }}"
   
