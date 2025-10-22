@@ -4,8 +4,9 @@
   vars_files:
   - course.yaml
   tasks:
-  - name: print the course info 
+  - name: print the varibles from files
     ansible.builtin.debug:
       msg: "The variables are coming from varible file: course.yaml"
+  - name: the varibles info is
     ansible.builtin.debug:
       msg: "The course name is: {{COURSE}} and duration is: {{DURATION}} and Trainer is: {{TRAINER}}"
