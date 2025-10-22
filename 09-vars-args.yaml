@@ -1,0 +1,7 @@
+- name: passing varibles from arguments
+  hosts: local
+  connetion: local
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+      msg: "the coures name is : {{ COURSE }} and Duration is : {{DURATION}} and traines is : {{ TRAINER }}"
