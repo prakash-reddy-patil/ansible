@@ -1,6 +1,6 @@
 - name: play level varibles
   hosts: local
-  connection: localhost    #ansible is connecting to localhost
+  connection: local    #ansible is connecting to localhost
   vars:
     COURSE: ansible
     DURATION: 10HRS
