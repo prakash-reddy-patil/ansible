@@ -5,7 +5,6 @@
     - name: username
       prompt: please enter the usename?
       private: false
-  vars_prompt:
     - name: password
       prompt: please enter the password?
       private: true
