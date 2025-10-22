@@ -1,0 +1,17 @@
+- name: varible preference
+  hosts: local
+  connection: local
+  vars:
+    NAME: from play level
+  vars_files:
+    course.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: What is NAME?
+    privite: false
+  tasks:
+  - name: testing varibles preference
+    vars:
+      NAME: from task level
+      ansible.builtin.debug:
+        msg: "NAME: {{ NAME }}"
