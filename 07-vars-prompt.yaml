@@ -6,6 +6,6 @@
       prompt: please enter the usename?
       private: false
   tasks:
-    -name: display the entered username
-    ansible.builtin.debug:
-      msg: "the entered name is: {{ username }}"
+    - name: display the entered username
+      ansible.builtin.debug:
+        msg: "the entered name is: {{ username }}"
