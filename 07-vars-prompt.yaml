@@ -4,7 +4,7 @@
   vars_prompt:
     - name: username
       prompt: please enter the usename?
-      privite: false
+      private: false
   tasks:
     -name: display the entered username
     ansible.builtin.debug:
