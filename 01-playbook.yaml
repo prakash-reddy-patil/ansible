@@ -3,5 +3,5 @@
   #list of tasks/collections/modules
   tasks:
   - name: ping
-    ansible.builtin.debug:
+    #ansible.builtin.debug:
     msg: "This is the first play and task"
