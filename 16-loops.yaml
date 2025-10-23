@@ -1,8 +1,8 @@
-- name: install packages
+- name: Install pacakges
   hosts: local
   connection: local
   become: yes
-- tasks:
+  tasks:
   - name: print names
     ansible.builtin.package:
       name: "{{ item.name }}"
@@ -11,4 +11,3 @@
     - { name: "nginx", state: "absent"}
     - { name: "mysql", state: "absent"}
     - { name: "zip", state: "latest"}
-
