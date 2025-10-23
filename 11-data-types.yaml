@@ -4,7 +4,7 @@
   vars:
     course: DevSecOps with aws  # string
     duration: 120  # number
-    is_live: true    # boolean - it returns true or fals 
+    is_live: true    # boolean - it returns true or false
     # list
     tools:       # [ "linux", "shell", "ansible" ]
     - "linux"
