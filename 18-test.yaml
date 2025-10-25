@@ -1,7 +1,7 @@
 - name: setting nginx
   hosts: frontend
   become: yes
-  var:
+  vars:
    NAME: "prakashreddy"
    AGE: 20
    ADDRESS: "Mumnai,gandhi naar"
