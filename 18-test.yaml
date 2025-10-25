@@ -1,12 +1,14 @@
-- name: if condition
-  hosts: frontend
-  vars:
-    NUMBER: 15
+- name: loop
+  hosts: local
   tasks:
-    - name: print message when if condition is true
+    - name: print names in loop
       ansible.builtin.debug:
-        msg: "the given number is less than 10"
-      when: NUMBER < 10
+        msg: "{{ item }}"
+      loop:
+      - abhiskek
+      - karthik
+      - lokesh
+      - pavan
  
 
  
