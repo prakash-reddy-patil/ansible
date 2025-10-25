@@ -1,7 +1,7 @@
 - name: if condition
   hosts: frontend
   vars:
-    NUMBER: 9
+    NUMBER: 15
   tasks:
     - name: print message when if condition is true
       ansible.builtin.debug:
