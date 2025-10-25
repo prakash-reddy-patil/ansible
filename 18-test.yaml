@@ -1,0 +1,11 @@
+- name: testing the playbook
+  host: frontend
+  connection: frontend
+  addresses: 
+  - anantapur
+  - ROADNO-15
+  - PIN -6611
+- tasks:
+  - name: print the tasks
+    ansible.builtin.debug:
+      msg: "this playbook is executing in front"
