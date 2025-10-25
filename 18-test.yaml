@@ -1,9 +1,9 @@
 - name: setting nginx
   hosts: frontend
   tasks:
-   - name: getting varibles from inventory files
-     ansible.builtin.debug:
-      - msg: "The course which is has taken is : {{ COURSE }}"
+    - name: getting varibles from inventory files
+      ansible.builtin.debug:
+        msg: "The course which is has taken is : {{ COURSE }}"
 
  
 
