@@ -1,7 +1,7 @@
 - name: testing the playbook
   hosts: frontend
   connection: frontend
-  addresses: 
+  address: 
   - anantapur
   - ROADNO-15
   - PIN -6611
