@@ -2,9 +2,9 @@
   hosts: local
   tasks:
     - name: print names in loop
-      ansible.builtin.debug:
+      ansible.builtin.package:
         name: "{{ item }}"
         state: latest
       loop:
-      - mongodb
-      - phyton3
+      - mysql
+      - zip
