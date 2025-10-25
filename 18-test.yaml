@@ -1,10 +1,6 @@
 - name: testing the playbook
   hosts: frontend
   connection: ssh
-  address: 
-  - anantapur
-  - ROADNO-15
-  - PIN -6611
   tasks:
     - name: print the tasks
       ansible.builtin.debug:
