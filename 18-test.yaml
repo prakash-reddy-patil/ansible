@@ -3,12 +3,8 @@
   tasks:
     - name: print names in loop
       ansible.builtin.debug:
-        msg: "{{ item }}"
+        name: "{{ item }}"
+        state: latest
       loop:
-      - abhiskek
-      - karthik
-      - lokesh
-      - pavan
- 
-
- 
+      - mongodb
+      - phyton3
