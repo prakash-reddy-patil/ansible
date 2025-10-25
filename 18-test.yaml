@@ -5,11 +5,11 @@
    NAME: "prakashreddy"
    AGE: 20
    ADDRESS: "Mumnai,gandhi naar"
-  course:
+   course:
    - "linux"
    - DevOps with aws
    - shell script
-  concepts:
+   concepts:
      aws: platfrom 
      ias: terraform
   tasks:
