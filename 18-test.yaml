@@ -1,5 +1,5 @@
 - name: testing the playbook
-  host: frontend
+  hosts: frontend
   connection: frontend
   addresses: 
   - anantapur
