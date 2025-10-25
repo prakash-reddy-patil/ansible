@@ -3,7 +3,7 @@
   tasks:
     - name: getting varibles from inventory files
       ansible.builtin.debug:
-        msg: "The course which is has taken is : {{ COURSE }}"
+        msg: "The course which is has taken is : {{ NAME }}"
 
  
 
