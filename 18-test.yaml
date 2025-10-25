@@ -5,6 +5,8 @@
    NAME: "prakashreddy"
    AGE: 20
    ADDRESS: "Mumnai,gandhi naar"
+   vars_files:
+    - course.yaml
    course:
    - "linux"
    - DevOps with aws
@@ -15,7 +17,7 @@
   tasks:
   - name: print all details about student
     ansible.builtin.debug:
-      msg: "The Name of the student is: {{ NAME }}, and his age is: {{ AGE }},and coures he did {{ course }}, and platform he knows is {{ concepts }}, and his adress is: {{ ADDRESS }}"
+          msg: "The Name of the student is: {{ NAME }}, and his age is: {{ AGE }},aborn in: {{ DOB }},and coures he did its{{ course }}, and platform he knows is {{ concepts }}, and his adress is: {{ ADDRESS }}"
     
    
 
