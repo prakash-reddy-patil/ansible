@@ -1,14 +1,12 @@
-- name: setting nginx
+- name: if condition
   hosts: frontend
   vars:
-    SUB1: maths
+    NUMBER: 9
   tasks:
-    - name: getting varibles from inventory files
-      vars:
-        SUB: "ENGLISH"
+    - name: print message when if condition is true
       ansible.builtin.debug:
-        msg: "the trainer teaches: {{ SUB }} subject and also: {{ SUB1 }}"
-
+        msg: "the given number is less than 10 
+      when: NUMBER < 10
  
 
  
