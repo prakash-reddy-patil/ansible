@@ -1,14 +1,21 @@
 - name: setting nginx
   hosts: frontend
   become: yes
+  var:
+   NAME: "prakashreddy"
+   AGE: 20
+   ADDRESS: "Mumnai,gandhi naar"
+   course:
+   - "linux"
+   - DevOps with aws
+   - shell script
+   concepts:
+     aws: platfrom 
+     ias: terraform
   tasks:
-  - name: install nginx
-    ansible.builtin.package: 
-      name: nginx
-      state: present
-  
-  - name: start nginx
-    ansible.builtin.service: 
-      name: nginx
-      state: started
-      enabled: yes
+  - name: print all details about student
+    ansible.builtin.debug:
+      msg: "The Name of the student is: {{ NAME }}, and his age is: {{ AGE }},and coures he did {{ course }}, and platform he knows is {{ concepts }}, and his adress is: {{ ADDRESS }}
+    
+   
+
