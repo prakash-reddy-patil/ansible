@@ -5,7 +5,7 @@
       vars:
         SUB: "ENGLISH"
       ansible.builtin.debug:
-        msg: "The course which is has taken is : {{ TRAINER }} and he also teaches: {{ SUB }}"
+        msg: "the trainer teaches: {{ SUB }} subject "
 
  
 
