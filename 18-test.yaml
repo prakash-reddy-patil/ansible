@@ -3,10 +3,21 @@
   become: yes
   vars_files:
    - course.yaml
+  vars:
+   NAME: "prakashreddy"
+   AGE: 20
+   ADDRESS: "Mumnai,gandhi naar"
+   course:
+   - "linux"
+   - DevOps with aws
+   - shell script
+   concepts:
+     aws: platfrom 
+     ias: terraform
   tasks:
   - name: print all details about student
     ansible.builtin.debug:
-      msg: "The date of birth is {{DOB}}"
+      msg: "The Name of the student is: {{ NAME }}, and his age is: {{ AGE }},and coures he did its: {{ course }}, and platform he knows is {{ concepts }}, and his adress is: {{ ADDRESS }}"
     
    
 
