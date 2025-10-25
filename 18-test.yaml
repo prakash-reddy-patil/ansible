@@ -1,5 +1,6 @@
 - name: loop
   hosts: local
+  become: yes
   tasks:
     - name: print names in loop
       ansible.builtin.package:
