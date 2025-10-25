@@ -1,6 +1,13 @@
-- name: ping
+- name: setting nginx
   hosts: frontend
   tasks:
-    - name: print the tasks
-      ansible.builtin.debug:
-        msg: "this playbook is executing in front" 
+  - name: install nginx
+    ansible.builtin.package: 
+      name: nginx
+      state: present
+  
+  - name: start nginx
+    ansible.builtin.service: 
+      name: nginx
+      state: started
+      enabled: yes

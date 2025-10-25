@@ -5,3 +5,9 @@
   - name: ping
     ansible.builtin.debug:
     msg: "This is the first play and task"
+
+
+
+
+
+  
