@@ -1,11 +1,13 @@
 - name: setting nginx
   hosts: frontend
+  vars:
+    SUB1: maths
   tasks:
     - name: getting varibles from inventory files
       vars:
         SUB: "ENGLISH"
       ansible.builtin.debug:
-        msg: "the trainer teaches: {{ SUB }} subject "
+        msg: "the trainer teaches: {{ SUB }} subject and also: {{ SUB1 }}"
 
  
 
