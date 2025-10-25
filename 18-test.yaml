@@ -1,6 +1,5 @@
-- name: testing the playbook
+- name: ping
   hosts: frontend
-  connection: ssh
   tasks:
     - name: print the tasks
       ansible.builtin.debug:
