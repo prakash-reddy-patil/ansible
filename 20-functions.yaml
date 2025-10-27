@@ -1,0 +1,13 @@
+# converting yaml to json 
+
+- name : function:converting yaml to json
+  hosts: local
+  connection: local
+  tasks:
+    - name: read yaml and take it into varible      # step-1
+      ansible.builtin.set_fact:
+        student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
+
+    - name: convert yaml into json
+      ansible.builtin.debug:
+        msg: "json: {{ student_yaml | to_json }}"

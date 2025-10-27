@@ -1,6 +1,4 @@
-# transforming string into list
-
-- name: function string to list
+- name: function string to list      # transforming string into list
   hosts: local
   connection: local
   vars:
