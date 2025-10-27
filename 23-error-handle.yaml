@@ -19,3 +19,12 @@
   - name: print the redirect_output1
     ansible.builtin.debug:
       msg: "{{ redirect_output1 }}"
+
+
+# Ansible doesnot proceed if you get any error.
+# In Ansible, to ignore an error and continue executing the playbook, you use the keyword:ignore_errors: true
+
+# Explanation:
+# When a task fails, Ansible normally stops the playbook for that host.
+# Adding ignore_errors: yes tells Ansible to continue execution even if the task fails.
+# The failed task will still be marked as failed (red) in output, but the play will move on.
