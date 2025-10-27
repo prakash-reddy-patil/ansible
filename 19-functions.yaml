@@ -19,9 +19,10 @@
 - name:  map to list      # map or dictionary both are same 
   hosts: local
   connection: local
-  tags:
-    Application: payment
-    Environment: Dev
+  vars:
+    tags:
+      Application: payment
+      Environment: Dev
   tasks:
   - name: converting map to list
     ansible.builtin.debug:
