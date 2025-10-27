@@ -12,7 +12,7 @@
       msg: "{{ command_output }}"
 
   - name: redirect output 
-    ansible.builtin.comand:  ls -ltr 
+    ansible.builtin.command:  ls -ltr 
     register: redirect_output
 
   - name: print the redirect_output
