@@ -20,4 +20,4 @@
   tasks:
   - name: text converting to uppercase
     ansible.builtin.debug:
-      msg: "The name is : {{ v_name | lower }}"
+      msg: "The name is : {{ gmail | lower }}"
