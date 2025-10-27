@@ -11,18 +11,29 @@
     ansible.builtin.debug:
       msg: "{{ command_output }}"
 
+  - name: redirect output 
+    ansible.builtin.comand:  ls -ltr 
+    register: redirect_output
+
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
 
 
 
 
 
 
-# the register keyword is used to capture the output (result) of a task and store it in a variable
+
+
+
+
+# The register keyword is used to capture the output (result) of a task and store it in a variable
 
 # shell vs command 
 # ---------------------------------------
-# remote login -> take login, execute command and comeout or login inside the server and execute the command.
-# when we dont have readymade modules avilable, we can execute command or shell module 
-# command module -> a simple command no need of access to shell environment like variables,bash,piping,etc ...
-# shell module -> can access variabless,pipes,redirections,shell,environment,etc.
+# Remote login: take login, execute command, and come out, or log in inside the server and execute the command.
+# When we don't have readymade modules available, we can execute a command or shell module. 
+# command module -> a simple command with no need of access to shell environment-like variables, bash, piping,etc .
+# shell module -> can access variables, pipes, redirections, shell, environment, etc.
 
