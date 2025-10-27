@@ -33,11 +33,11 @@
   hosts: local
   connection: local
   vars:
-  tagslist:
-  - key: Application
-    value: payment
-  - key: Environment
-    value: Dev
+    tagslist:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: Dev
   tasks:
   - name: converting list to map(or)dictionary
     ansible.builtin.debug:
