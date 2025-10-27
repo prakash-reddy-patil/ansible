@@ -2,19 +2,19 @@
   hosts: local
   connection: local
   tasks:
-  - name: redirect output 
-    ansible.builtin.command:  ls -ltr     
-    register: redirect_output
+  # - name: redirect output 
+  #   ansible.builtin.command:  ls -ltr     
+  #   register: redirect_output
 
-  - name: print the redirect_output
-    ansible.builtin.debug:
-      msg: "{{ redirect_output }}"
+  # - name: print the redirect_output
+  #   ansible.builtin.debug:
+  #     msg: "{{ redirect_output }}"
 
 
   - name: redirect output1 
     ansible.builtin.command:  ls -ltr > /tmp/output.txt       
     register: redirect_output1
-    ignore_errors: true                  # Igonore the error and proceed.                  
+    #ignore_errors: true                  # Igonore the error and proceed.                  
 
   - name: print the redirect_output1
     ansible.builtin.debug:
