@@ -1,0 +1,15 @@
+# transforming string into list
+- name: function string to list
+  hosts: local
+  connection: local
+  vars:
+    technologies: DevOps, Linux, Ansible, awscloud    #string
+  tasks:
+  - name: default varible
+    ansible.builtin.debug:
+    # default function, if define any variblel it prints other wise it print default varible which defind.
+      msg: "Hello my name is {{ name | default ('sivakumar reddy') }}"
+
+  - name: string to list 
+    ansible.builtin.debug:
+    msg: "technologies are: {{ technologies | splict (',') }}"
