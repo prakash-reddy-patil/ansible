@@ -1,4 +1,5 @@
 # transforming string into list
+
 - name: function string to list
   hosts: local
   connection: local
@@ -12,4 +13,16 @@
 
   - name: string to list 
     ansible.builtin.debug:
-      msg: "technologies are: {{ technologies | split (',') }}"
+      msg: "technologies are: {{ technologies | split(',') }}"
+
+
+- name:  map to list      # map or dictionary both are same 
+  hosts: local
+  connection: local
+  tags:
+    Application: payment
+    Environment: Dev
+  task:
+  - name: converting map to list
+    ansible.builtin.debug:
+      msg: "Tags are: {{ tags | dict2items}}"
