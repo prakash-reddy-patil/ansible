@@ -26,7 +26,7 @@
   tasks:
   - name: converting map to list
     ansible.builtin.debug:
-      msg: "Tags are: {{ my_tags | dict2items}}"
+      msg: "my_tags are: {{ my_tags | dict2items}}"
 
 
 - name: list to map(or)dictionary    # converting list to map 
@@ -41,5 +41,5 @@
   tasks:
   - name: converting list to map(or)dictionary
     ansible.builtin.debug:
-      msg: "Tags are: {{ tagslist | items2dict }}"
+      msg: "tagslist are: {{ tagslist | items2dict }}"
   
