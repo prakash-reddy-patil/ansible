@@ -4,15 +4,18 @@
   hosts: local
   connection: local
   tasks:
-    - name: read yaml and take it into varible      # step-1
+    - name: read yaml and take it into varible       # step-1
       ansible.builtin.set_fact:
         student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
 
-    - name: convert yaml into json
+    - name: convert yaml into json                   # step-2
       ansible.builtin.debug:
         msg: "json: {{ student_yaml | to_json }}"
     
-    - name: save json to file
+    - name: save json to file                        # step-3 
       ansible.builtin.copy:
         dest: ./student-data.json
         content: "{{ student_yaml | to_nice_json }}"
+
+
+# after execution open the file vim student-data.json  --> data appers in json format

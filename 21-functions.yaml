@@ -1,0 +1,10 @@
+# converting uppercase
+- name: convert uppcase
+  hosts: local
+  connections: local
+  vars:
+    name: "prakashreddy patil"
+  tasks:
+  - name: text converting to uppercase
+    ansible.builtin.debug:
+      msg: "The name is : {{ name | upper }}"
