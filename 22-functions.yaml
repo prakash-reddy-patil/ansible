@@ -21,7 +21,7 @@
 
 
   - name: redirect output1 
-    ansible.builtin.shell:  ls -ltr > /temp/output.txt       #shell modules can work with complex commands
+    ansible.builtin.shell:  ls -ltr > /tmp/output.txt       #shell modules can work with complex commands
     register: redirect_output1
 
   - name: print the redirect_output1
