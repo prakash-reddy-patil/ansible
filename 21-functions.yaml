@@ -8,3 +8,16 @@
   - name: text converting to uppercase
     ansible.builtin.debug:
       msg: "The name is : {{ v_name | upper }}"
+
+
+  
+  # converting lowercase
+- name: convert lowercase
+  hosts: local
+  connection: local
+  vars:
+    gmail: DEVOPS.INFO@GMAIL
+  tasks:
+  - name: text converting to uppercase
+    ansible.builtin.debug:
+      msg: "The name is : {{ v_name | lower }}"
