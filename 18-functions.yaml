@@ -4,4 +4,4 @@
   tasks:
   - name: default varible
     ansible.builtin.debug:
-      msg: "Hello my name is {{ NAME }}"
+      msg: "Hello my name is {{ name | default ('prakash') }}"   # default function, if define any name it wiil print other wise it print default 
