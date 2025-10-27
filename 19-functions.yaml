@@ -29,15 +29,15 @@
       msg: "Tags are: {{ my_tags | dict2items}}"
 
 
-- name: ist to map(or)dictionary    # converting list to map 
+- name: list to map(or)dictionary    # converting list to map 
   hosts: local
   connection: local
   vars:
     tagslist:
-    - key: Application
-      value: payment
-    - key: Environment
-      value: Dev
+      - key: Application
+        value: payment
+      - key: Environment
+        value: Dev
   tasks:
   - name: converting list to map(or)dictionary
     ansible.builtin.debug:
