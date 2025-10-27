@@ -9,7 +9,6 @@
     ansible.builtin.debug:
       msg: "The name is : {{ v_name | upper }}"
 
-
   
   # converting lowercase
 - name: convert lowercase
@@ -21,3 +20,18 @@
   - name: text converting to uppercase
     ansible.builtin.debug:
       msg: "The name is : {{ gmail | lower }}"
+
+
+# to test if string is vailid IP address or not
+
+- name: string is vailid IP address or not
+  hosts: local
+  connection: local
+  vars:
+    ipaddress: 122.122.15.1
+  tasks:
+  - name: check ip addrress is valid or not
+    ansible.builtin.debug:
+      msg: "The name is : {{ ipaddress | ansible.utils.ipv4  }}" 
+
+  
