@@ -22,7 +22,7 @@
   tags:
     Application: payment
     Environment: Dev
-  task:
+  tasks:
   - name: converting map to list
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items}}"
