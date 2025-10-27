@@ -1,7 +1,7 @@
 # converting uppercase
 - name: convert uppcase
   hosts: local
-  connections: local
+  connection: local
   vars:
     name: "prakashreddy patil"
   tasks:
