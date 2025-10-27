@@ -3,8 +3,8 @@
   hosts: local
   connection: local
   vars:
-    name: "prakashreddy patil"
+    v_name: "prakashreddy patil"
   tasks:
   - name: text converting to uppercase
     ansible.builtin.debug:
-      msg: "The name is : {{ name | upper }}"
+      msg: "The name is : {{ v_name | upper }}"
