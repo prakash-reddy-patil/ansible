@@ -12,13 +12,21 @@
       msg: "{{ command_output }}"
 
   - name: redirect output 
-    ansible.builtin.command:  ls -ltr 
+    ansible.builtin.command:  ls -ltr           # simple command can work with command module 
     register: redirect_output
 
   - name: print the redirect_output
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
 
+
+  - name: redirect output1 
+    ansible.builtin.shell:  ls -ltr > /temp/output.txt       #shell modules can work with complex commands
+    register: redirect_output1
+
+  - name: print the redirect_output1
+    ansible.builtin.debug:
+      msg: "{{ redirect_output1 }}"
 
 
 
