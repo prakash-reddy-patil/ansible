@@ -6,3 +6,5 @@
       ansible.builtin.debug:
         msg: "the course name is:{{ COURSE }} and duration is:{{ DURATION }} and trainer is : {{ TRAINER }}"
   
+
+# In Ansible, inventory vars mean variables that are defined inside the inventory file.

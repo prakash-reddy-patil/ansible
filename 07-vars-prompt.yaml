@@ -12,9 +12,9 @@
     - name: print credentials
       ansible.builtin.debug:
         msg: "the entered name is: {{ username }}, password is :{{ password }}"
+        
 
-
-# A prompt variable in an Ansible playbook is a variable that asks the user for a value(input) while the playbook is running.
+# In Ansible playbook, prompt means asking the user to enter a value during playbook run.
 # syntax
 # vars_prompt:
 #  - name: "variable_name"
