@@ -10,3 +10,6 @@
   - name: the varibles info is
     ansible.builtin.debug:
       msg: "The course name is: {{ COURSE }} and duration is: {{ DURATION }} and Trainer is: {{ TRAINER }}"
+
+
+# vars_files lets you store variables in a separate file and use them in your playbook.
