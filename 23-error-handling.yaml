@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   tasks:
-  # - name: redirect output 
-  #   ansible.builtin.command:  ls -ltr     
-  #   register: redirect_output
+  - name: redirect output 
+    ansible.builtin.command:  ls -ltr     
+    register: redirect_output
 
-  # - name: print the redirect_output
-  #   ansible.builtin.debug:
-  #     msg: "{{ redirect_output }}"
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
 
 
   - name: redirect output1 

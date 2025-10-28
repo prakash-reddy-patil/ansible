@@ -1,0 +1,12 @@
+- name: user creation
+  hosts: local
+  connection: local
+  tasks:
+  - name: check user exists or not
+    ansible.builtin.command: id roboshop
+    register: user_output
+    ignore_errors: true    #Adding ignore_errors: true tells Ansible to continue execution even if the task fails
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"
