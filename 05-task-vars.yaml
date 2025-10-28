@@ -4,10 +4,10 @@
   vars:
     COURSE: DevSecOps with aws
     DURATION: 10HRS
-    TRAINER: PRAKASHREDDY PATIl
+    TRAINER: PATIL PRAKASHREDDY
   tasks:
   - name: print the course info
     vars:
-      COURSE: Ansible                #declring variables in task is called task level variable
+      COURSE: Ansible                # declaring variables in task is called task level variable
     ansible.builtin.debug:
-      msg: "The course is: {{COURSE}} and Duration of course is: {{DURATION}} and trainer is MR: {{TRAINER}}"
+      msg: "The course is: {{ COURSE }} and Duration of course is: {{ DURATION }} and trainer is MR: {{ TRAINER }}"
