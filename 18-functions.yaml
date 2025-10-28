@@ -6,7 +6,6 @@
   tasks:
   - name: default varible
     ansible.builtin.debug:
-    # default function, if define any variblel it prints other wise it prints default varible which defind.
       msg: "Hello my name is {{ name | default ('sivakumar reddy') }}"
 
 

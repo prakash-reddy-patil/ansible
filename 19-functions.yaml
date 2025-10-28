@@ -4,11 +4,6 @@
   vars:
     technologies: DevOps, Linux, Ansible, awscloud    #string
   tasks:
-  - name: default varible
-    ansible.builtin.debug:
-    # default function, if define any variblel it prints other wise it print default varible which defind.
-      msg: "Hello my name is {{ name | default ('sivakumar reddy') }}"
-
   - name: string to list 
     ansible.builtin.debug:
       msg: "technologies are: {{ technologies | split(',') }}"
@@ -22,7 +17,7 @@
       Application: payment
       Environment: Dev
   tasks:
-  - name: converting map to list
+  - name: make a list from a dictionary
     ansible.builtin.debug:
       msg: "my_tags are: {{ my_tags | dict2items}}"
 
@@ -37,7 +32,12 @@
       - key: Environment
         value: Dev
   tasks:
-  - name: converting list to map(or)dictionary
+  - name: convert a list of items (key-value pairs) into a dictionary
     ansible.builtin.debug:
       msg: "tagslist are: {{ tagslist | items2dict }}"
-  
+
+
+
+# split function in an Ansible playbook is used to break (split) a string into parts using a separator (like space, comma, or dot).
+# items2dict: It changes a list into a dictionary format 
+# dict2items: It changes a dictionary into a list of key–value pairs.
