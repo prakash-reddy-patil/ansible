@@ -1,8 +1,8 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
-    name: "Rockey Bai"
+  # vars:
+  #   name: "Rockey Bai"
   tasks:
   - name: default varible
     ansible.builtin.debug:
