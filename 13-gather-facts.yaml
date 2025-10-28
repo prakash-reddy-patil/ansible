@@ -6,3 +6,6 @@
   - name : facts
     ansible.builtin.debug:
       msg:  "{{ ansible_facts }}"
+
+
+# In Ansible, gathering facts means collecting information about the target system before running tasks.
