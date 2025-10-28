@@ -1,8 +1,13 @@
 - name: functions
   hosts: local
   connection: local
+  vars:
+    name: "Rockey Bai"
   tasks:
   - name: default varible
     ansible.builtin.debug:
-    # default function, if define any variblel it prints other wise it print default varible which defind.
+    # default function, if define any variblel it prints other wise it prints default varible which defind.
       msg: "Hello my name is {{ name | default ('sivakumar reddy') }}"
+
+
+# "The default function prints the defined variable if it exists; otherwise, it prints the default variable that is defined."
