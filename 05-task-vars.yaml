@@ -8,6 +8,6 @@
   tasks:
   - name: print the course info
     vars:
-      COURSE: Ansible                #declring variables in task is caleed task level variable
+      COURSE: Ansible                #declring variables in task is called task level variable
     ansible.builtin.debug:
       msg: "The course is: {{COURSE}} and Duration of course is: {{DURATION}} and trainer is MR: {{TRAINER}}"
