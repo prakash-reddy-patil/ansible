@@ -11,3 +11,7 @@
     - { name: "nginx", state: "absent"}
     - { name: "mysql", state: "absent"}
     - { name: "zip", state: "latest"}
+
+# state: absent means remove the package or file.
+# state: latest means install or update it to the newest version.
+
