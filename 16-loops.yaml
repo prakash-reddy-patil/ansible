@@ -10,7 +10,7 @@
     loop:
     - nginx
     - mysql
-    - mongodb
+    - mongodb-org
 
 
 # In Ansible, state: latest means make sure the package is installed and updated to the newest version.
