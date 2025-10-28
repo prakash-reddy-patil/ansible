@@ -33,6 +33,7 @@
   - name: check ip addrress is valid or not
     ansible.builtin.debug:
       msg: "T {{ ipaddress | ansible.utils.ipv4 }}" 
+      
 
 # ansible.utils.ipv4 need python library(dependencies), that has to install 
 #  install =>  pip3.9 install netaddr
