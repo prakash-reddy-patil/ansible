@@ -10,3 +10,5 @@
 
 
 # "The default function prints the defined variable if it exists; otherwise, it prints the default variable that is defined."
+
+# In Ansible All filters behave like functions.
