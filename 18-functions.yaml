@@ -6,7 +6,7 @@
   tasks:
   - name: default varible
     ansible.builtin.debug:
-      msg: "Hello my name is {{ name | default ('sivakumar reddy') }}"
+      msg: "Hello my name is {{ name | default ('prakash') }}"
 
 
 # "The default function prints the defined variable if it exists; otherwise, it prints the default variable that is defined."
